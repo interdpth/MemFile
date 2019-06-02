@@ -44,11 +44,11 @@ MemFile::MemFile(char* file, int expectedMinSize)
 }
 
 
-void MemFile::Save()
+void MemFile::save()
 {
-	Save(fileName);
+	save(fileName);
 }
-void MemFile::Save(char* file)
+void MemFile::save(char* file)
 {
 	//std functions
 	FILE* FP = ::fopen(file, "w+b");
